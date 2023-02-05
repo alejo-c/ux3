@@ -1,0 +1,33 @@
+#navbar {
+	background-color: var(--crust);
+}
+
+#nav-items-list {
+	display: flex;
+	justify-content: center;
+}
+
+.nav-item {
+	list-style: none;
+}
+
+.nav-link {
+	display: flex;
+	color: var(--subtext0);
+	font-size: 1.2em;
+	width: 10em;
+	height: 3.5em;
+	text-decoration: none;
+	justify-content: center;
+	align-items: center;
+}
+
+.nav-link:not(.active):hover {
+	background-color: var(--mantle);
+	color: var(--foreground);
+}
+
+.nav-link:active, .active {
+	background-color: var(--surface0);
+	color: var(--foreground);
+}
