@@ -1,0 +1,68 @@
+#container {
+	display: flex;
+	justify-content: center;
+	align-content: center;
+	margin-block: 7em;
+}
+
+#vehicle-wrapper {
+	display: grid;
+	grid-template-areas:
+		"vl vc vr"
+		"al vd ar";
+	gap: 1em;
+}
+
+#vehicle-left {
+	grid-area: vl;
+}
+
+#vehicle-center {
+	grid-area: vc;
+	border: .5em solid orange;
+}
+
+#vehicle-right {
+	grid-area: vr;
+}
+
+#arrow-left {
+	grid-area: al;
+}
+
+#vehicle-desc {
+	grid-area: vd;
+	text-align: center;
+}
+
+#arrow-right {
+	grid-area: ar;
+}
+
+.arrow {
+	width: 7em;
+	height: 7em;
+	cursor: pointer;
+	margin: .5em;
+	align-self: center;
+	justify-self: center;
+}
+
+.arrow:hover {
+	width: 7.5em;
+	height: 7.5em;
+	margin: 0;
+}
+
+.arrow:active {
+	width: 7em;
+	height: 7em;
+	margin: .5em;
+}
+
+.vehicle {
+	width: 23em;
+	height: 20em;
+	align-self: center;
+	justify-self: center;
+}
