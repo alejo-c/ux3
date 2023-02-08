@@ -1,0 +1,154 @@
+:root {
+	--base: #5fd181;
+	--header: #657b91;
+	--input: #fafbfb;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: 'Segoe UI';
+	color: #fff;
+	font-weight: 640;
+}
+
+.icon {
+	transform: scale(.16);
+	transform-origin: 0 0;
+}
+
+.treehouse-icon {
+	fill: var(--base);
+	padding-left: 5.1em;
+}
+
+#navbar {
+	background-color: #fff;
+	color: #404040;
+	display: flex;
+	height: 10vh;
+	align-items: center;
+	padding-right: 3.3em;
+}
+
+.nav-items-list {
+	list-style: none;
+	display: flex;
+	text-align: center;
+	margin-right: .7em;
+}
+
+.nav-link {
+	color: gray;
+	text-decoration: none;
+	width: 6em;
+	display: block;
+}
+
+.nav-link:hover {
+	
+}
+
+#free-trial-link {
+	color: var(--base)
+}
+
+#container {
+	display: flex;
+	background-color: var(--base);
+	background-image: url('/images/treehouse-background.svg');
+	background-size: 50%;
+	height: 90vh;
+	align-items: center;
+	justify-content: space-evenly;
+	padding-inline: 2em;
+}
+
+#text {
+	width: 44%;
+}
+
+#title {
+	font-size: 3em;
+}
+
+#free-trial-form {
+	background-color: #fff;
+	border-radius: 10px;
+	text-align: center;
+	width: 44%;
+}
+
+#form-header {
+	background-color: var(--header);
+	padding: 1.3em;
+}
+
+#form-body {
+	padding: 1em;
+	display: grid;
+	grid-template-rows: auto auto;
+	grid-template-columns: auto auto;
+	gap: .7em;
+}
+
+.form-control {
+	text-align: left;
+	margin: .9em;
+}
+
+.form-label {
+	color: #505050;
+	display: block;
+}
+
+.form-input {
+	border: 2.5px solid #d0d0d0;
+	background-color: var(--input);
+	border-radius: 3px;
+	color: #303030;
+	padding: .9em;
+	display: block;
+	width: 89%;
+}
+
+input:focus {
+	background-color: #fff;
+	border-color: #909090;
+	outline: none;
+}
+
+#form-footer {
+	font-weight: 640;
+	font-size: small;
+	text-align: center;
+	display: flex;
+	flex-direction: column;
+	padding: 2em;
+	gap: 1em;
+}
+
+hr {
+	border-color: #fff;
+	color: #fff;
+	background-color: #fff;
+}
+
+#form-btn {
+	padding: 1em;
+	border: none;
+	border-radius: 3px;
+	background-color: var(--base);
+}
+
+#terms-services {
+	text-align: left;
+	color: #606060;
+	display: block;
+}
+
+#form-link {
+	color: cornflowerblue;
+	font-weight: 640;
+	text-decoration: none;
+}
