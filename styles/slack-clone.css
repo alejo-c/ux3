@@ -182,3 +182,19 @@ body {
 	align-items: center;
 	justify-content: center;
 }
+
+.logo-figure:nth-child(1), .logo-figure:nth-child(2), .logo-figure:nth-child(3) {
+	border-top: none;
+}
+
+.logo-figure:nth-child(1), .logo-figure:nth-child(4) {
+	border-left: none;
+}
+
+.logo-figure:nth-child(3), .logo-figure:nth-child(6) {
+	border-right: none;
+}
+
+.logo-figure:nth-child(4), .logo-figure:nth-child(5), .logo-figure:nth-child(6) {
+	border-bottom: none;
+}
