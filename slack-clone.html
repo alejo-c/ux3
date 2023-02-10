@@ -82,6 +82,17 @@
 		</footer>
 
 		<script src="scripts/load-slack-images.js"></script>
+		<script>
+			window.onscroll = () => {
+				var screenHeight = window.innerHeight / 2
+				var navbar = document.getElementById('navbar')
+				if (window.pageYOffset > window.innerHeight / 2) {
+					navbar.classList.add('show')
+				} else {
+					navbar.classList.remove('show')
+				}
+			}	
+		</script>
 	</body>
 
 </html>
