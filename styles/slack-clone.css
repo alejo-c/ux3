@@ -21,11 +21,21 @@ body {
 }
 
 #navbar {
+	position: absolute;
 	display: flex;
 	border-bottom: 1px solid var(--border);
 	padding-left: 4em;
 	padding-right: 4.1em;
 	padding-block: .54em;
+	background-color: #fff;
+	transition: top 0.5s ease-in-out;
+	top: 0;
+	left: 0;
+	right: 0;
+}
+
+#navbar.show {
+	position: fixed;
 }
 
 .nav-items-list {
@@ -62,9 +72,8 @@ body {
 	border: .1px solid var(--hover);
 }
 
-.paragraph, #signin-link {
+#signin-link {
 	font-family: 'Segoe UI';
-	font-size: .9em;
 }
 
 /* Container */
@@ -93,6 +102,14 @@ body {
 
 #title {
 	font-size: 5em;
+}
+
+#subtitle {
+	font-size: 2.3em;
+	letter-spacing: -1px;
+}
+
+#title, #subtitle {
 	color: var(--title);
 	font-weight: bolder;
 }
@@ -133,8 +150,35 @@ body {
 
 #signin {
 	margin-top: 1em;
+	font-size: .9em;
 }
 
-#foot-notes{
-	background-color: var(--secondary);	
+#foot-notes {
+	padding-block: 2.9em;
+	background-color: var(--secondary);
+	text-align: center;
+	color: var(--title);
+}
+
+.paragraph {
+	margin-block: 1em 2em;
+	font-family: 'Segoe UI';
+}
+
+#logos {
+	display: grid;
+	grid-template-rows: repeat(2, 1fr);
+	grid-template-columns: repeat(3, 1fr);
+	align-items: center;
+	justify-content: center;
+	margin-top: 2em;
+	margin-inline: 3.5em;
+}
+
+.logo-figure {
+	display: flex;
+	border: 1px solid var(--border);
+	height: 7em;
+	align-items: center;
+	justify-content: center;
 }
