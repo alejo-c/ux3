@@ -41,7 +41,7 @@ const vehicles = [
 	},
 	{
 		id: '6',
-		name: 'R7',
+		model: 'R7',
 		brand: 'Yamaha',
 		cylnderCapacity: '689',
 		use: 'Super Deportiva',
@@ -49,7 +49,7 @@ const vehicles = [
 	},
 	{
 		id: '7',
-		use: 'CRA 125 SE Unishock',
+		model: 'CRA 125 SE Unishock',
 		brand: 'AKT',
 		cylnderCapacity: '124',
 		use: 'Urbana',
