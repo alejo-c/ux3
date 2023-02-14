@@ -31,10 +31,10 @@
 	display: flex;
 	height: 10vh;
 	align-items: center;
+	justify-content: center;
 	padding-right: 3.2em;
 	position: fixed;
 	width: 100%;
-	margin: 0;
 }
 
 .nav-items-list {
@@ -176,6 +176,15 @@ hr {
 	color: cornflowerblue;
 	font-weight: 640;
 	text-decoration: none;
+}
+
+#hamburger-btn {
+	color: var(--header);
+	border: none;
+	font-size: xx-large;
+	background-color: #fff;
+	font-weight: lighter;
+	display: none;
 }
 
 @media (max-width: 576px) {
